@@ -1,0 +1,15 @@
+.nav-link:hover,
+.active-nav:hover {
+  background-color: rgb(25, 135, 84, 1);
+  color: white;
+}
+
+.active-nav {
+  background-color: #198754;
+  color: white;
+}
+
+.nav-link,
+.active-nav {
+  transition: all 0.4s;
+}
