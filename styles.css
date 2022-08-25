@@ -13,3 +13,7 @@
 .active-nav {
   transition: all 0.4s;
 }
+
+#time {
+  font-size: 27px;
+}

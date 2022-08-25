@@ -237,3 +237,26 @@ document.getElementById("completedTask").addEventListener("click", function () {
 });
 
 drawTaskList();
+
+function getWeather() {
+  // fetch("https://weatherdbi.herokuapp.com/data/weather/vilnius")
+  //   .then((responce) => responce.json())
+  //   .then((data) => {
+  //     console.log(data);
+  // console.log(new Date.UTC());
+  // });
+}
+
+function headTime() {
+  const text = document.getElementById("time");
+
+  text.textContent = formatDate(new Date());
+}
+
+headTime();
+setInterval(headTime, 1000);
+// console.log(getWeather());
+
+// teksto keitimas
+// const text = document.getElementById("time");
+// text.textContent = "labas";
