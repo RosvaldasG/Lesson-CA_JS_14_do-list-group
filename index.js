@@ -249,7 +249,6 @@ function getWeather() {
 
 function headTime() {
   const text = document.getElementById("time");
-
   text.textContent = formatDate(new Date());
 }
 
