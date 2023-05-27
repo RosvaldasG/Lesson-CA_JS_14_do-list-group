@@ -239,13 +239,19 @@ document.getElementById("completedTask").addEventListener("click", function () {
 drawTaskList();
 
 function getWeather() {
-  // fetch("https://weatherdbi.herokuapp.com/data/weather/vilnius")
-  //   .then((responce) => responce.json())
-  //   .then((data) => {
-  //     console.log(data);
-  // console.log(new Date.UTC());
-  // });
+  fetch("https://weatherdbi.herokuapp.com/data/weather/vilnius", {
+    mode: "cors",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  })
+    .then((responce) => responce.json())
+    .then((data) => {
+      console.log(data);
+    });
 }
+
+getWeather();
 
 function headTime() {
   const text = document.getElementById("time");
